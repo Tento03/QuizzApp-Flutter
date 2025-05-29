@@ -24,7 +24,7 @@ class BottomPage extends StatefulWidget {
 
 class _BottomPageState extends State<BottomPage> {
   int selectedIndex = 0;
-  List<Widget> pages = [Homepage(), Scorepage()];
+  List<Widget> pages = [Homepage(), Scorepage(label: '', score: 0)];
 
   @override
   Widget build(BuildContext context) {

@@ -231,7 +231,11 @@ class _QuestionCardState extends State<QuestionCard> {
                           () => Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Scorepage(),
+                              builder:
+                                  (context) => Scorepage(
+                                    label: widget.category,
+                                    score: total,
+                                  ),
                             ),
                           ),
                       child: const Text("OK"),
